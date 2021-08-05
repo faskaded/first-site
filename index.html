@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div style="max-height: 1800px; margin: auto;">
+        <div style="max-height: 1800px; margin: auto">
             <div class="uk-visible@m">
 
                 <!--окно в корзине -->
@@ -44,51 +44,18 @@
                             <img style="width:200px; height:39px;" height="auto" src="icon/logo.png" alt="Logo" uk-img>
                         </nav>
                         <div class="test-overlay uk-navbar-left  " aria-hidden="false">
-
-                            <ul style="padding-bottom: 35px;" class="uk-navbar-nav uk-margin-medium-left">
-                                <!--меню в кружке -->
-                                <div style=" position: absolute; z-index:99999999; " class="container ">
-
-                                    <div class="uk-margin-bottom menu" onclick="this.classList.add('expand')">
-                                        <div class="from">
-                                            <div class="from-contents">
-                                                <div class="avatar me"></div>
-                                                <div class="name"></div>
-                                            </div>
-                                        </div>
-                                        <div class="to">
-                                            <div class="to-contents">
-                                                <div class="top">
-                                                    <div class="avatar-large me"></div>
-                                                    <div class="name-large"></div>
-                                                    <div class="x-touch" onclick="document.querySelector('.menu').classList.remove('expand');event.stopPropagation();">
-                                                        <div class="x">
-                                                            <div class="line1"></div>
-                                                            <div class="line2"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottomone  uk-button uk-width-1-1 uk-margin-remove-top uk-align-center">
-                                                    <p class=""><a href="#">Меню</a></p>
-                                                </div>
-                                                <div class="bottomone  uk-button uk-width-1-1 uk-margin-remove-top uk-align-center">
-                                                    <p class=""><a href="#">Акции</a></p>
-                                                </div>
-                                                <div class="bottomone  uk-button uk-width-1-1 uk-margin-remove-top uk-align-center">
-                                                    <p class=""><a href="#">Рестораны</a></p>
-                                                </div>
-                                                <div class="bottomone  uk-button uk-width-1-1 uk-margin-remove-top uk-align-center">
-                                                    <p class=""><a href="#">Контакты</a></p>
-                                                </div>
-                                                <div class="bottomone  uk-button uk-width-1-1 uk-margin-remove-top uk-align-center">
-                                                    <p class=""><a href="#">О нас</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="uk-inline">
+                             <div type="button" class="avatar me"></div>
+                                <div id="parent-drop-click" uk-drop="mode: click" class="uk-drop uk-drop-bottom-left" >
+                                    <div id="parent-drop-card-click" class="drm uk-card uk-card-body uk-card-default" >
+                                            <p class="bottomone"><a href="#">Меню</a></p>
+                                            <p class="bottomone"><a href="#">Акции</a></p>        
+                                            <p class="bottomone"><a href="#">Рестораны</a></p>
+                                            <p class="bottomone"><a href="#">Контакты</a></p>
+                                            <p class="bottomone"><a href="#">О нас</a></p>          
                                     </div>
                                 </div>
-                            </ul>
-
+                            </div>
                             <!-- Это кнопка переключения модального окна в # ссылка на модалку-->
                             <button style=" font-weight: bold;" id="buttonone" class="uk-button uk-button-default uk-margin-small-right uk-margin-large-left uk-margin-xlarge-left" type="button" uk-toggle="target: #modal-example">Найдите свой адрес</button>
                             <!-- карта -->
